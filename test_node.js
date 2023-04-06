@@ -8,7 +8,8 @@ http.createServer(function (request, response) {
     response.writeHead(200, {'Content-Type': 'text/plain'});
 
     // 发送响应数据 "Hello World"
-    response.end('Hello World\n');
+    response.end('Hello World ,' +
+        '构建成功\n');
 }).listen(8086);
 
 // 终端打印如下信息
