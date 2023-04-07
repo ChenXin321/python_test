@@ -1,15 +1,9 @@
-pipeline {
-    agent none
-    stages {
-        stage('Build') {
-            agent {
-                docker {
-                    image 'python:2-alpine'
-                }
-            }
-            steps {
-                sh 'python -m py_compile sources/add2vals.py sources/calc.py'
-            }
-        }
+node('docker') {
+    checkout scm
+    stage('Build') {
+//         docker.image('node:6.3').inside {
+//             sh 'npm --version'
+//         }
+        echo "build 123"
     }
 }
