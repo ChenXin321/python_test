@@ -13,4 +13,4 @@ http.createServer(function (request, response) {
 }).listen(8086);
 
 // 终端打印如下信息
-console.log('1 2 3 4 5 6 7 8 9 12 Server running at http://127.0.0.1:8086/');
+console.log('1 2 3 4 5 6 7 8 9 12 13Server running at http://127.0.0.1:8086/');
