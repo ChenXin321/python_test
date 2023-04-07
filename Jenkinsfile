@@ -1,9 +1,6 @@
-node('docker') {
+node {
     checkout scm
     stage('Build') {
-//         docker.image('node:6.3').inside {
-//             sh 'npm --version'
-//         }
         echo "build 123"
     }
 }
