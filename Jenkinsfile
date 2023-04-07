@@ -1,6 +1,11 @@
 node {
     checkout scm
-    stage('Build') {
-        echo "build 123"
+    withEnv(['DISABLE_AUTH=true',
+             'DB_ENGINE=sqlite']){
+             stage('Build') {
+                echo "build 123"
+                sh 'printenv'
+             }
     }
+
 }
