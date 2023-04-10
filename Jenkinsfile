@@ -6,7 +6,7 @@ pipeline{
                 branch "pro"
             }
             steps{
-                "echo yes pro"
+                echo "yes pro"
             }
         }
     }
